@@ -10,9 +10,9 @@ function PreferencesForm() {
   const handleSubmit = async () => {
     try {
       await axios.post('https://89i90srmib.execute-api.ap-northeast-1.amazonaws.com/prod/saveUserPreferences', {
-        userId,
-        preferences,
-        ngConditions
+        userId: userId,
+        preferences: preferences,
+        ngConditions: ngConditions
       });
       setMessage('保存しました。');
     } catch (err) {
