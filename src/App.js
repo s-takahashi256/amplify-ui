@@ -9,7 +9,7 @@ function PreferencesForm() {
 
   const handleSubmit = async () => {
     try {
-      await axios.post('https://89i90srmib.execute-api.ap-northeast-1.amazonaws.com/prod/saveUserPreferences', {
+      await axios.post('https://w6nkdiwgs8.execute-api.ap-northeast-1.amazonaws.com/prod/SaveUserPreferences', {
         userId: userId,
         preferences: preferences,
         ngConditions: ngConditions
